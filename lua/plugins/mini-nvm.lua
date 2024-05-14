@@ -48,6 +48,9 @@ return {
       query_updaters = 'abcdefghijklmnopqrstuvwxyz0123456789_-.',
     }
 
+    -- Buffer tabs
+    require('mini.tabline').setup()
+
     -- Better Around/Inside textobjects
     --
     -- Examples:
