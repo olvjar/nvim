@@ -626,7 +626,8 @@ require('lazy').setup({
       require('nvim-treesitter.configs').setup(opts)
     end,
   },
-
+  -- Notifications
+  { 'rcarriga/nvim-notify', opts = {} },
   -- import custom plugins
   { import = 'plugins' },
 }, {
