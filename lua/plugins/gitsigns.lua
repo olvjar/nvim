@@ -15,6 +15,14 @@ return {
           vim.keymap.set(mode, l, r, opts)
         end
 
+        -- Base
+        signs = {
+          add = { text = '+' },
+          change = { text = '~' },
+          delete = { text = '_' },
+          topdelete = { text = '‾' },
+          changedelete = { text = '~' },
+        }
         -- Navigation
         map('n', ']c', function()
           if vim.wo.diff then
