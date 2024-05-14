@@ -31,3 +31,6 @@ vim.keymap.set('n', '<leader>s', ':w<CR>')
 
 -- Neotree
 vim.keymap.set('n', '<leader>n', 'Neotree') -- open ntree
+
+-- Lazy.nvim
+vim.keymap.set('n', '<leader>l', '<cmd>:Lazy<cr>') -- open lazy.nvim
