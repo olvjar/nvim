@@ -48,6 +48,9 @@ return {
       query_updaters = 'abcdefghijklmnopqrstuvwxyz0123456789_-.',
     }
 
+    -- indent scoping
+    require('mini.indentscope').setup()
+
     -- Buffer tabs
     require('mini.tabline').setup()
 
