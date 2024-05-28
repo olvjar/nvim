@@ -26,4 +26,6 @@ require('lazy').setup("core.plugins", {
     size = { width = 0.9, height = 0.9 },
     border = { "┏", "━", "┓", "┃", "┛","━", "┗", "┃" },
   }
+  
+  { import = '../plugins' },
 })
