@@ -10,7 +10,8 @@ return {
 
   --[[ PLUGINS ]]
  
-        'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  	-- Detect tabstop and shiftwidth automatically
+ 	{ 'tpope/vim-sleuth', opts = {} },
 
         -- nerd font web icons
         { 'nvim-tree/nvim-web-devicons', opts = {} },
