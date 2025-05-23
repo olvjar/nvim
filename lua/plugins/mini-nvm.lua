@@ -4,50 +4,6 @@
 return {
   'echasnovski/mini.nvim',
   config = function()
-    -- Starter screen/dashboard
-    local starter = require 'mini.starter'
-    starter.setup {
-      autoopen = true,
-
-      items = {
-        starter.sections.builtin_actions(),
-        starter.sections.recent_files(5, true),
-      },
-
-      header = table.concat({
-        [[                              ]],
-        [[            ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒          ]],
-        [[         ▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░       ]],
-        [[       ▒▒▓▓                 ▓▓▓▓      ]],
-        [[      ▒▓▓                      ▓▓▓    ]],
-        [[     ▒▓    ▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒       ▓▓   ]],
-        [[   ▒▒▓   ▒▒▓▓           ▒▓▓▓     ▓▓   ]],
-        [[  ▒▒▓  ▒▒▓     ▒▓▓▓▓▓▒    ▒▓▓    ▓▓▓  ]],
-        [[  ▒▓  ▒▓▓   ▒▓▓       ▓▓   ▒▓▓   ▓▓▓  ]],
-        [[  ▒▓  ▒▓   ▒▓   ▒▓▓▓▒  ▓▓▓  ▓▓    ▓▓  ]],
-        [[  ▒▓  ▒▓  ▒▓   ▒▓   ▓▒   ▓▓ ▒█▓   ▓▓  ]],
-        [[  ▒▓  ▒▓  ▒▓  ▒▓     ▓▒  █▓  █▓   ▓▓  ]],
-        [[  ▒▓  ▒▓   ▒▓   ▓▓▓ ▒▓▓  █▓  █▓       ]],
-        [[  ▒▓  ▒▓▓   ▒▓▓    ▒▓▓   █▓  █▓       ]],
-        [[  ▒▓▓  ▒▓▓▓   ▒▓▓▓▓▓     █▓ █▓        ]],
-        [[   ▒▓    █▓▓          █▓▓   █▓        ]],
-        [[   ▒▓▓▓   ▒█▓▓▓▓▓▓▓▓▓▓     █▓         ]],
-        [[     ▒▓▓▓               ██▓▓          ]],
-        [[       ▒▓▓▓▓▓         █▓▓             ]],
-        [[          ▓▓▓▓▓▓▓▓▓▓▓▓▓▓              ]],
-        [[                              ]],
-      }, '\n'),
-
-      footer = nil,
-
-      content_hooks = {
-        starter.gen_hook.adding_bullet(),
-        starter.gen_hook.aligning('center', 'center'),
-      },
-
-      query_updaters = 'abcdefghijklmnopqrstuvwxyz0123456789_-.',
-    }
-
     -- indent scoping
     require('mini.indentscope').setup()
 
